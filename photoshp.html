@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>photography</title>
+    <link rel="stylesheet" type="text/css" href="photoshop.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/fontawesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkalami&family=Bungee+Spice&family=Kanit:ital,wght@0,300;0,400;0,500;0,600;1,200;1,500;1,800&family=Libre+Baskerville:ital,wght@0,700;1,400&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,800;1,400;1,500&family=Poppins:wght@300;400;500;600;700&family=Rampart+One&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="img/logo.jpg" alt="logo" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="./drem photo shop/index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Gallery</a></li>
+            <li><a href="#portfolio">Media</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <h1>EMILY BENSON</h1>
+          <p>CREATIVE PHOTOGRAPHY</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="gallery">
+      <h1 class="sub-title">Photo Gallery</h1>
+
+      <div id="quad">
+        <figure>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/rose-red-wine.jpg"
+            alt="rose-red-wine"
+          />
+          <figcaption>Rose Red Wine</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/green-glass-bottle.jpg"
+            alt
+          />
+          <figcaption>Green Glass Bottle</figcaption>
+        </figure>
+        <figure>
+          <img
+            src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/guinness-barrels.jpg"
+            alt
+          />
+          <figcaption>Guinness Barrels, Dublin</figcaption>
+        </figure>
+        <figure>
+          <img src="img/baby-3.jpeg" alt />
+          <figcaption>Crystal Skull Vodka</figcaption>
+        </figure>
+        <figure>
+          <img src="img/b-4.jpeg" alt />
+          <figcaption>Crystal Skull Vodka</figcaption>
+        </figure>
+        <figure>
+          <img src="img/b-2.webp" alt />
+          <figcaption>Crystal Skull Vodka</figcaption>
+        </figure>
+        <figure>
+          <img src="img/b-1.jpeg" alt />
+          <figcaption>Model</figcaption>
+        </figure>
+        <figure>
+          <img src="img/baby.jpeg" alt />
+          <figcaption>Baby Girl</figcaption>
+        </figure>
+        <figure>
+          <img src="img/baby-1.jpeg" alt />
+          <figcaption>Baby</figcaption>
+        </figure>
+      </div>
+    </div>
+
+    <script>
+      var sidemenu = document.getElementById("sidemenu");
+      function openmenu() {
+        sidemenu.style.right = "0";
+      }
+      function closemenu() {
+        sidemenu.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: rgba(126, 200, 133, 0.73);
+    color: #fff;
+}
+
+#header {
+    width: 100%;
+    height: 100vh;
+    background: url(img/b3.webp);
+    background-position: center;
+    background-size: cover;
+}
+
+.container {
+    padding: 0 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+
+.header-text {
+    margin-top: 18%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    line-height: 60px;
+}
+
+.header-text p {
+    margin-top: 40px;
+    font-size: 25px;
+    letter-spacing: 0.3rem;
+    font-weight: 500;
+}
+
+.header-text h1>span {
+    color: #ff004f;
+}
+
+
+nav .fa-sharp {
+    display: none;
+}
+
+nav .fa-solid {
+    display: none;
+}
+
+
+@media only screen and (max-width:700px) {
+   
+    .header-text {
+        margin-top: 70%;
+        font-size: 16px;
+    }
+
+    .header-text h1 {
+        font-size: 30px;
+    }
+    .header-text p{
+        margin-top: 10px;
+    }
+
+    nav .fa-sharp {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-sharp,
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+
+    .sub-title {
+        font-size: 40px;
+    }
+   
+
+}
+
+
+
+/*-------------- About Me ---------------*/
+#gallery{
+    width: 100%;
+    margin-top: 30px;
+}
+
+div#quad {
+    background-color: rgba(0, 0, 0, 0.905);
+    font-size: 0;
+    width: 90%;
+    margin: 30px auto;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+}
+
+div#quad figure {
+    margin: 0;
+    width: 33.33%;
+    height: auto;
+    transition: 1s;
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    row-gap: 20px;
+}
+
+div#quad figure:hover {
+    cursor: pointer;
+    z-index: 4;
+}
+
+div#quad figure img {
+    width: 100%;
+    height: auto;
+    transition: all 0.5s;
+}
+div#quad figure img:hover{
+    transform: scale(1.1);
+}
+
+div#quad figure figcaption {
+    margin: 0;
+    opacity: 0;
+    background: rgba(0, 0, 0, 0.821);
+    color: #fff;
+    padding: .3rem;
+    font-size: 1.2rem;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    transition: 1s 1s opacity;
+}
+
+.sub-title {
+    color: whitesmoke;
+    font-weight:400;
+    font-size: 60px;
+    margin-left: 69px;
+    margin-top: 20px;
+    position: relative;
+}
+
+
+.sub-title::after {
+    content: "";
+    width: 0;
+    height: 3px;
+    background: #00c3ff;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    transition: 0.5s;
+}
+
+.sub-title:hover::after {
+    width: 25%;
+}
+
+
+@media only screen and (max-width: 600px){
+    div#quad figure{
+        width: 100%;
+    }
+    div#quad{
+        width: 90%;
+    }
+    .sub-title{
+        font-size: 30px;
+    }
+}
+
